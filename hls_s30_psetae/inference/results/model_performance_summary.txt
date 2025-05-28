@@ -1,0 +1,41 @@
+Overall Accuracy: 0.4146
+
+Classification Report (High Confidence Predictions >= 0.80, Classes 0-9):
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.39      0.56        70
+           2       0.80      0.60      0.69        20
+           3       0.00      0.00      0.00         0
+           4       0.45      0.81      0.57        36
+           5       0.42      0.56      0.48         9
+           6       0.00      0.00      0.00         0
+           7       0.95      0.41      0.58        46
+           8       0.00      0.00      0.00         0
+           9       0.00      0.00      0.00         0
+
+    accuracy                           0.51       181
+   macro avg       0.36      0.28      0.29       181
+weighted avg       0.83      0.51      0.58       181
+
+Prediction Summary:
+Total samples processed: 369
+
+Confidence distribution:
+High confidence (>=0.80): 181 samples (49.05%)
+Medium confidence (0.50-0.80): 141 samples (38.21%)
+Low confidence (<0.50): 47 samples (12.74%)
+
+Class distribution (0-9):
+Class 0: 0 samples
+Class 1: 169 samples
+Class 2: 49 samples
+Class 3: 0 samples
+Class 4: 53 samples
+Class 5: 17 samples
+Class 6: 0 samples
+Class 7: 81 samples
+Class 8: 0 samples
+Class 9: 0 samples
+
+Mean confidence: 0.7498
