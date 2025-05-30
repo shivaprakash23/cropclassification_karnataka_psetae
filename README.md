@@ -96,5 +96,6 @@ psetae_github_publish/
 ## References & Credits
 
 - Developed by Shivaprakash Yaragal, Lund University, Sweden
+- This project heavyly relies on work of Garnot et al. (2020) and Ofori-Ampofo et al. (2021)
 - For crop classification and time series extraction using multi-sensor satellite data in Karnataka, India
 - See individual subfolder READMEs for detailed usage and script documentation
