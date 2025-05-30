@@ -8,7 +8,7 @@ from tqdm import tqdm
 import argparse
 
 # Initialize Earth Engine with project
-ee.Initialize(project='ee-shivaprakashssy-psetae-ka28')
+ee.Initialize(project='your project')
 
 def get_collection(geometry, start_date, end_date, cloud_cover):
     """Get HLS S30 collection filtered by date, bounds, and cloud cover"""
