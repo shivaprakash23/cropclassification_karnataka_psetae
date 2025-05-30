@@ -50,8 +50,10 @@ def get_collection(geometry, start_date, end_date, cloud_cover, sensor_type='L30
     # Select required bands based on sensor type
     if sensor_type == 'L30':
         bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B10', 'B11']
-    else:  # S30
+    elif sensor_type == 'S30':
         bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B8A', 'B11', 'B12']
+    else:
+        raise ValueError("Invalid sensor type. Must be 'L30' or 'S30'")
     
     collection = collection.select(bands)
     
