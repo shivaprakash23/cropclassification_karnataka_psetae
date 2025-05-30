@@ -113,7 +113,13 @@ def prepare_dataset(rpg_file, label_names=['CODE_GROUP'], id_field='ID_PARCEL',
     """
     # Set default cloud cover based on sensor type
     if cloud_cover is None:
-        cloud_cover = 20 if sensor_type == 'L30' else 100
+        if sensor_type == 'L30':
+            cloud_cover = 20
+        elif sensor_type == 'S30':
+            cloud_cover = 20
+        else:
+            cloud_cover = cloud_cover
+            raise ValueError("Invalid sensor type. Must be 'L30' or 'S30'")
         
     warnings.filterwarnings('error', category=DeprecationWarning)
     start = datetime.now()
