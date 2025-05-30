@@ -1,5 +1,5 @@
 # HLS Data Extraction Script
-
+hls_extraction.py. ( User can also use the separate extraction files)
 This script provides a unified solution for extracting Harmonized Landsat Sentinel-2 (HLS) data using Google Earth Engine (GEE). It supports both L30 (Landsat) and S30 (Sentinel-2) data extraction with standardized output format and error handling.
 
 ## Features
